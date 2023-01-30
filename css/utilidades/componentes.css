@@ -17,11 +17,21 @@
     color: var(--cor-p5);
     font: 600 1.125rem/1.35 "Poppins", sans-serif;
     max-width: max-content;
+    border: none;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: linear-gradient(#ffb60d, #e59317);
 }
 
 .botao.secundario {
     background: var(--cor-10);
     color: var(--cor-2);
+}
+
+.botao.secundario:hover {
+    background: var(--cor-9);
 }
 
 .botao.seta {
@@ -43,8 +53,11 @@
     transform: translateX(4px);
 }
 
-.botao.secundario:hover {
-    background: var(--cor-9);
+@media (max-width: 600px) {
+    .botao {
+        padding: 12px 16px;
+        font-size: 1rem;
+    }
 }
 
 .link {
@@ -52,7 +65,6 @@
     color: var(--cor-p1);
     font: 500 1.5rem/1.5 "Poppins", sans-serif;
     text-transform: uppercase;
-    position: relative;
 }
 
 .link::after {
@@ -67,21 +79,15 @@
     color: var(--cor-0);
 }
 
-.botao:hover {
-    background: linear-gradient(#ffb60d, #e59317);
-}
-
-@media (max-width: 600px) {
-    .botao {
-        padding: 12px 16px;
-        font-size: 1rem;
-    }
-}
-
+/* titulo internas */
 .titulo-bg {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--cor-11);
+}
+
+.titulo {
+    background: url("../../img/dec/top-right.svg") no-repeat top right 20px;
 }
 
 .titulo p {
